@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.jpeg" alt="logo" id="logo">
+        <h3 id="sitename">MYSITE</h3>
+        <div class="contact">
+            <H4 id="contact">CONTACT</H4>
+            <p>E-MAIL :</p>
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem incidunt impedit excepturi fugit quis doloremque, aliquam deleniti dolor delectus labore temporibus quaerat nisi eum assumenda! Fugiat labore mollitia maiores vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut nihil quo possimus, atque quis sequi, enim vitae eos nobis voluptates, tenetur autem id rerum! Dolorum, eligendi? Magni, nobis expedita. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum molestias repellat dolorem, laudantium commodi, error recusandae culpa ab deserunt consectetur ipsa nulla omnis veniam doloribus voluptate pariatur in consequatur tempore!</div>
+        <p><b>Form</b></p>
+        <form  action="javascript:submitForm()" onSubmit="return validate()">
+            <div class="user-input">
+                <label for="name">NAME :</label>
+                <input type="text" id="name" required><br><br>
+                <label for="email">E-MAIL :</label>
+                <input type="text" id="email" required><br><br>
+                <label for="genre">FAVOURITE GENRE :</label>
+                <input list="genre"  id="list" required> <br><br>
+                <datalist id="genre">
+                    <option value="Hip Hop"></option>
+                    <option value="Dance"></option>
+                    <option value="Mystery"></option>
+                    <option value="Thiller"></option>
+                    <option value="Comedy"></option>
+                </datalist>
+                <input type="checkbox" id="check">
+                <label for="check">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL
+                </label><br>
+                
+            </div>
+            <div id="submit">
+                <button >submit</button>
+            </div>
+        </form>
+        <script>
+            function validate() {
+                let valid=true;
+                let name=document.getElementById("name");
+                let email=document.getElementById("email");
+                let genre=document.getElementById("genre");
+                if(name.value.length<10) {
+                    alert("Name must be greater than 10 letters");
+                    valid = false;
+                }
+                return valid;
+            }
+            function submitForm() {
+                alert("Form Sumbitted");
+            }
+        </script>
+    </div>
+</body>
+<footer class="footer">
+    <p>ALL RIGHTS ARE RESERVED</p>
+</footer>
+</html>
