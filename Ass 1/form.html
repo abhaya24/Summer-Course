@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="styleSheet2.css">
+</head>
+<body>
+    <header>
+        <div class="navDiv">
+            <div class="navDivInlineLogo">
+                <img src="logo.png" alt="LOGO">
+            </div>
+            <div class="navDivInline">
+                <strong><a href="FrontPage.html" >MY SITE</a></strong> 
+            </div>
+            <div class="contact">
+                Contact Deatils <br>
+                <label for="contact">EMAIL-ID :</label>
+                    <a href="mailto:sitemail@gmail.com">mysite@gmail.com</a><br>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facilis vel sint cum eum nobis. Quae tenetur vitae aut culpa minus voluptatibus earum rem, voluptatem velit, optio laborum voluptate animi.
+                Corporis cupiditate est rem ratione harum optio sit nam repellat numquam, quisquam dolore non aliquid eaque reiciendis, nobis minima excepturi sed tempora quos aut. Nemo sint odio asperiores ducimus reiciendis!
+                Sunt alias sit provident ad soluta voluptatem, sint rerum eius animi cupiditate pariatur molestiae! Magni beatae itaque aperiam ipsa, architecto voluptatum earum eveniet cupiditate necessitatibus laudantium magnam repellendus blanditiis voluptatibus.
+                Minima iusto deserunt sint ipsa consequatur explicabo ea obcaecati! Dolor quo ex exercitationem autem quidem quaerat enim fuga libero, vitae reprehenderit aspernatur rerum soluta iste repudiandae obcaecati fugiat labore expedita!
+                Quisquam architecto tempore pariatur velit enim vero quis! In ipsum animi nam voluptatibus et id itaque sint, praesentium unde officiis laudantium magni consequatur eligendi cum magnam odit blanditiis placeat repudiandae?
+                Repudiandae sed debitis architecto, quae officia doloribus maiores dolor, quo, vel atque praesentium reiciendis modi expedita veniam culpa tenetur. Beatae unde aliquam alias itaque totam fugit vero quibusdam fuga minima.
+                Voluptatem reprehenderit blanditiis laudantium. Impedit molestiae at adipisci architecto voluptas necessitatibus officiis, hic voluptates iure nostrum vel accusantium modi sunt sequi recusandae, ut suscipit quo delectus labore reiciendis! Voluptas, expedita?
+                Facere, sunt. Excepturi nobis odio labore inventore cupiditate, minima totam nesciunt odit adipisci aut maxime eos vero nostrum ducimus eaque delectus similique deserunt nam possimus illum. Aliquam saepe unde aspernatur.
+                Eligendi, ad inventore itaque qui vitae est vero dolores esse quasi ipsam, repudiandae ipsa quibusdam iste obcaecati nisi aut autem odio sed. Itaque hic non porro corrupti, laboriosam laudantium beatae!
+                Eius cumque est sequi! Nemo et deleniti modi debitis quo, consectetur necessitatibus dolorem facilis, doloremque facere perferendis ipsam, quisquam harum velit enim vero. Quod excepturi, sint cumque corporis nihil iste.
+            </p>
+        </div>
+        <form action="javascript:submitForm()" onsubmit="return validate()" class="form">
+            <label for="name">Enter Your Name :</label>
+            <input type="text" class="name" id="name" required><br><br>
+            <label for="email">Enter Your Email :</label>
+            <input type="text" class="email" id="email" required><br><br>
+            <label for="list">Favourite  Genre :</label>
+            <input list="Genre" class="list" id="list" required> <br><br>
+            <datalist id="Genre">
+                <option value="Arcade">
+                <option value="Action">
+                <option value="Horror">
+                <option value="Casual">
+            </datalist>
+            <input type="checkbox" class="checkbox" id="checkbox" required>SUBSCRIBE TO OUR SITE VIA EMAIL <br> <br>
+            <input type="submit" value="SUBMIT" id="submit" class="submit">
+        </form>
+        <script>
+            let val=document.getElementById("name");
+            function validate(){
+                if(val.value.length<=6){
+                    window.alert("Name Atleast Contain 6 Letters")
+                    return false
+                }else{
+                    return true;
+                }
+            }
+            function submitForm(){
+                window.alert("We will Contact You Soon THrough Your Email.")
+            }
+        </script>
+    </body>
+    <footer>
+        <p class="footerText">All RIGHTS ARE RESERVED </p>
+    </footer>
+</body>
+</html>
