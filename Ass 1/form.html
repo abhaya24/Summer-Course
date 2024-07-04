@@ -3,73 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Page</title>
-    <link rel="stylesheet" href="styleSheet2.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <header>
-        <div class="navDiv">
-            <div class="navDivInlineLogo">
-                <img src="logo.png" alt="LOGO">
-            </div>
-            <div class="navDivInline">
-                <strong><a href="FrontPage.html" >MY SITE</a></strong> 
-            </div>
-            <div class="contact">
-                Contact Deatils <br>
-                <label for="contact">EMAIL-ID :</label>
-                    <a href="mailto:sitemail@gmail.com">mysite@gmail.com</a><br>
-            </div>
+    <div class="navbar">
+        <img src="logo.jpeg" alt="logo" id="logo">
+        <h3 id="sitename"><a href="FrontPage.html">MYSITE</a></h3>
+        <div class="contact">
+            <H4 id="contact">CONTACT</H4>
+            <p>E-MAIL :</p>
         </div>
-    </header>
-    <body>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium facilis vel sint cum eum nobis. Quae tenetur vitae aut culpa minus voluptatibus earum rem, voluptatem velit, optio laborum voluptate animi.
-                Corporis cupiditate est rem ratione harum optio sit nam repellat numquam, quisquam dolore non aliquid eaque reiciendis, nobis minima excepturi sed tempora quos aut. Nemo sint odio asperiores ducimus reiciendis!
-                Sunt alias sit provident ad soluta voluptatem, sint rerum eius animi cupiditate pariatur molestiae! Magni beatae itaque aperiam ipsa, architecto voluptatum earum eveniet cupiditate necessitatibus laudantium magnam repellendus blanditiis voluptatibus.
-                Minima iusto deserunt sint ipsa consequatur explicabo ea obcaecati! Dolor quo ex exercitationem autem quidem quaerat enim fuga libero, vitae reprehenderit aspernatur rerum soluta iste repudiandae obcaecati fugiat labore expedita!
-                Quisquam architecto tempore pariatur velit enim vero quis! In ipsum animi nam voluptatibus et id itaque sint, praesentium unde officiis laudantium magni consequatur eligendi cum magnam odit blanditiis placeat repudiandae?
-                Repudiandae sed debitis architecto, quae officia doloribus maiores dolor, quo, vel atque praesentium reiciendis modi expedita veniam culpa tenetur. Beatae unde aliquam alias itaque totam fugit vero quibusdam fuga minima.
-                Voluptatem reprehenderit blanditiis laudantium. Impedit molestiae at adipisci architecto voluptas necessitatibus officiis, hic voluptates iure nostrum vel accusantium modi sunt sequi recusandae, ut suscipit quo delectus labore reiciendis! Voluptas, expedita?
-                Facere, sunt. Excepturi nobis odio labore inventore cupiditate, minima totam nesciunt odit adipisci aut maxime eos vero nostrum ducimus eaque delectus similique deserunt nam possimus illum. Aliquam saepe unde aspernatur.
-                Eligendi, ad inventore itaque qui vitae est vero dolores esse quasi ipsam, repudiandae ipsa quibusdam iste obcaecati nisi aut autem odio sed. Itaque hic non porro corrupti, laboriosam laudantium beatae!
-                Eius cumque est sequi! Nemo et deleniti modi debitis quo, consectetur necessitatibus dolorem facilis, doloremque facere perferendis ipsam, quisquam harum velit enim vero. Quod excepturi, sint cumque corporis nihil iste.
-            </p>
-        </div>
-        <form action="javascript:submitForm()" onsubmit="return validate()" class="form">
-            <label for="name">Enter Your Name :</label>
-            <input type="text" class="name" id="name" required><br><br>
-            <label for="email">Enter Your Email :</label>
-            <input type="text" class="email" id="email" required><br><br>
-            <label for="list">Favourite  Genre :</label>
-            <input list="Genre" class="list" id="list" required> <br><br>
-            <datalist id="Genre">
-                <option value="Arcade">
-                <option value="Action">
-                <option value="Horror">
-                <option value="Casual">
-            </datalist>
-            <input type="checkbox" class="checkbox" id="checkbox" required>SUBSCRIBE TO OUR SITE VIA EMAIL <br> <br>
-            <input type="submit" value="SUBMIT" id="submit" class="submit">
+    </div>
+    <div class="main-div">
+        <div class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem incidunt impedit excepturi fugit quis doloremque, aliquam deleniti dolor delectus labore temporibus quaerat nisi eum assumenda! Fugiat labore mollitia maiores vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut nihil quo possimus, atque quis sequi, enim vitae eos nobis voluptates, tenetur autem id rerum! Dolorum, eligendi? Magni, nobis expedita. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum molestias repellat dolorem, laudantium commodi, error recusandae culpa ab deserunt consectetur ipsa nulla omnis veniam doloribus voluptate pariatur in consequatur tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptates deserunt quisquam, quasi distinctio ab. Autem laboriosam sit beatae perferendis sunt, voluptatum iste ad nesciunt rerum, rem eum nulla quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit minima, sunt facere repudiandae debitis quidem animi sapiente corporis consequuntur quod voluptate mollitia rerum. Debitis tenetur consequatur libero, at reiciendis pariatur.</div>
+        <p><b>Form</b></p>
+        <form  action="javascript:submitForm()" onSubmit="return validate()">
+            <div class="user-input">
+                <label for="name">NAME :</label>
+                <input type="text" id="name" required><br><br>
+                <label for="email">E-MAIL :</label>
+                <input type="text" id="email" required><br><br>
+                <label for="genre">FAVOURITE GENRE :</label>
+                <input list="genre"  id="list" required> <br><br>
+                <datalist id="genre">
+                    <option value="Hip Hop"></option>
+                    <option value="Dance"></option>
+                    <option value="Mystery"></option>
+                    <option value="Thiller"></option>
+                    <option value="Comedy"></option>
+                </datalist>
+                <input type="checkbox" id="check">
+                <label for="check">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL
+                </label><br><br>
+                <div class="submitDiv">
+                    <button id="submit">SUBMIT</button>
+                </div>
+            </div>
+           
         </form>
         <script>
-            let val=document.getElementById("name");
-            function validate(){
-                if(val.value.length<=6){
-                    window.alert("Name Atleast Contain 6 Letters")
-                    return false
-                }else{
-                    return true;
+            function validate() {
+                let valid=true;
+                let name=document.getElementById("name");
+                let email=document.getElementById("email");
+                let genre=document.getElementById("genre");
+                if(name.value.length<10) {
+                    alert("Name must be greater than 10 letters");
+                    valid = false;
                 }
+                return valid;
             }
-            function submitForm(){
-                window.alert("We will Contact You Soon THrough Your Email.")
+            function submitForm() {
+                alert("Form Sumbitted");
             }
         </script>
-    </body>
-    <footer>
-        <p class="footerText">All RIGHTS ARE RESERVED </p>
-    </footer>
+    </div>
 </body>
+<footer class="footer">
+    <p>ALL RIGHTS ARE RESERVED</p>
+</footer>
 </html>

@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    background-color: rgb(82, 82, 161);
+    color: beige;
+}
+a {
+    text-decoration: none;
+}
+#logo {
+    height: 100px; 
+    width: 100px;
+    border-radius: 50px;
+}
+#sitename {
+    padding-top: 25px;
+    padding-left: 1%;
+}
+.contact {
+    padding-top: 3px;
+    padding-left: 65%;
+}
+.main-div {
+    padding: 2%;
+}
+.para {
+    text-align: justify;
+    word-spacing:10px;
+    letter-spacing: 1px;
+}
+.submitDiv {
+    text-align: center;
+}
+
+#submit {
+    text-align: center;
+    border:none;
+    background-color: rgb(40, 161, 221);
+    width: 100%;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.footer {
+    background-color: rgb(82, 82, 161);
+    color: beige;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    height: 50px;
+}
+
+form {
+    padding: 2rem;
+    background-image: url("form-image.avif");
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
