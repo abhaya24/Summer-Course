@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(177, 170, 173);
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-logo {
+    display: flex;
+    color: palevioletred;
+    /* border: 2px solid gray; */
+}
+
+#navbar-logo {
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: palevioletred;
+}
+
+.navbar-search {
+    border: 2px solid gray;
+}
+
+#navbar-search {
+    height: 2rem;
+    width: 12rem;
+    border: none;
+    border-right: 2px solid gray;
+    background-color: rgb(177, 170, 173);
+    padding-left: 1rem;
+}
+
+.fa-solid {
+    width: 2rem;
+    color: palevioletred;
+    text-align: center;
+}
+
+.menubar {
+    background-color: rgb(177, 170, 173);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    /* padding-left: 1rem; */
+    color: palevioletred;
+    height: auto;
+    width: 20rem;
+    border: 2px solid grey;
+}
+
+.home-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.customers-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.department-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.home-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.media-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.account-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.menubar i {
+    padding-top: 0.7rem;
+    color: white;
+}
+
+.content {
+    display: flex;
+}
+
+.Customer-table {
+    border: 1px solid black;
+    width: 100%;
+    height: 50rem;
+    padding: 1rem;
+}
+table{
+    width: 100%;
+    
+}
+table,th,td {
+    border: 2px solid  rgb(161, 215, 81);
+    border-collapse: collapse; 
+    height: 4rem;  
+    text-align: center;
+}
+
+#icon {
+    text-decoration: none;
+    color:palevioletred ;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.home-logo:hover ,#icon:hover{
+    background-color:palevioletred;
+}
+.customers-logo:hover ,#icon:hover {
+    background-color:palevioletred;
+}
+.department-logo:hover ,#icon:hover {
+    background-color:palevioletred;
+}
+.media-logo:hover,#icon:hover {
+    background-color:palevioletred;
+    color: white;  
+}
+
+.account-logo:hover,#icon:hover{
+    background-color:palevioletred;
+}
+
+footer {
+    display: flex;
+    margin: 1.8rem;
+    justify-content: center;
+}
+
+#nextpage-button {
+    height: 2rem;
+    width: 3rem;
+    border: none;
+    border: 1px solid salmon;
+    border-radius: 5px;
+}
+
+#pageNo{
+    width: 2rem;
+    padding-left: 1rem;
+    border: 1px solid salmon;
+    border-radius: 5px;
+}

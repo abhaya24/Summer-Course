@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(177, 170, 173);
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar-logo {
+    display: flex;
+    color: palevioletred;
+    /* border: 2px solid gray; */
+}
+
+#navbar-logo {
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: palevioletred;
+}
+
+.navbar-search {
+    border: 2px solid gray;
+}
+
+#navbar-search {
+    height: 2rem;
+    width: 12rem;
+    border: none;
+    border-right: 2px solid gray;
+    background-color: rgb(177, 170, 173);
+    padding-left: 1rem;
+}
+
+.fa-solid {
+    width: 2rem;
+    color: palevioletred;
+    text-align: center;
+}
+
+.menubar {
+    background-color: rgb(177, 170, 173);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    color: palevioletred;
+    height: auto;    
+    width: 20rem;
+    border: 2px solid grey;
+}
+
+.home-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.customers-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.department-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.home-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.media-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.account-logo {
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.menubar i {
+    padding-top: 0.7rem;
+    color: white;
+}
+
+.content {
+    display: flex;
+}
+#icon {
+    text-decoration: none;
+    color:palevioletred ;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.home-logo:hover{
+    background-color:palevioletred;
+}
+.customers-logo:hover ,#icon:hover {
+    background-color:palevioletred;
+}
+.department-logo:hover ,#icon:hover {
+    background-color:palevioletred;
+}
+
+.media-logo:hover,#icon:hover {
+    background-color:palevioletred;
+    color: white;  
+}
+
+.account-logo:hover,#icon:hover{
+    background-color:palevioletred;
+}
+
+.login-form {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-logo {
+    text-align: center;
+}
+
+#pen-icon {
+    color: black;
+}
+label {
+    font-weight: bold;
+}
+input {
+    border: none;
+    border: 2px solid grey;
+    width: 30rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.button {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;    
+}
+#save {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+#cancel {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
